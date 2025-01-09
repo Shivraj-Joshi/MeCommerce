@@ -20,73 +20,100 @@
         <li id="links">Home</li>
         <li id="links">Products</li>
         <li id="links">About US</li>
-        <span class="material-symbols-outlined"> shopping_cart </span>
+        <span class="material-symbols-outlined" id="cart-icon"> shopping_cart </span>
       </div>
+      
+<div class="cart">
+    <div id="cart-title">Your Cart</div>
+    <div id="cart-content">
+        <div id="cart-item">
+            <img  src="" alt="">
+            <div id="cart-details">
+                <h3 id="product-title"></h3>
+                <span id="product-price"></span>
+                <!-- <div id="product-quantity">
+                    <button id="decrease">-</button>
+                    <span class="product-number">1</span>
+                    <button id="increase">+</button>
+                </div> -->
+            </div>
+            <!-- <i class="ri-delete-bin-line cart-remove"></i> -->
+        </div>
+
+    </div>
+    <div id="total">
+        <div id="total-title">Total</div>
+        <div id="total-price">$0</div>
+    </div>
+    <button id="buy-btn">Buy Now</button>
+    <i class="ri-close-large-line" id="cart-close"></i>
+</div>
+
       <div id="product-container">
         <h3 id="text">Products</h3>
         <div id="products">
-            <div id="items">
-                <div id="image"><img src="https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="shoe image"> </div>
-                <div id="item-name">product name</div>
-                <div id="price">$200</div>
-                <div id="add-cart">
-                <div id="card-btn"><button id="btn">Add to Cart</button></div>
+            <div class="items">
+                <div class="image"><img src="https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="shoe image"> </div>
+                <div class="item-name">product name</div>
+                <div class="price">$200</div>
+                <div class="add-cart">
+                <div class="card-btn"><button class="btn">Add to Cart</button></div>
                 </div>
             </div>
-            <div id="items">
-                 <div id="image"><img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="shoe image"> </div>
-                <div id="item-name">product name</div>
-                <div id="price">$50</div>
-                <div id="add-cart">
-                <div id="card-btn"><button id="btn">Add to Cart</button></div>
+            <div class="items">
+                 <div class="image"><img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="shoe image"> </div>
+                <div class="item-name">product name</div>
+                <div class="price">$50</div>
+                <div class="add-cart">
+                <div class="card-btn"><button class="btn">Add to Cart</button></div>
                 </div>
             </div>
-            <div id="items">
-                 <div id="image"><img src="https://images.pexels.com/photos/1456706/pexels-photo-1456706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="shoe image"> </div>
-                <div id="item-name">product name</div>
-                <div id="price">$99</div>
-                <div id="add-cart">
-                <div id="card-btn"><button id="btn">Add to Cart</button></div>
+            <div class="items">
+                 <div class="image"><img src="https://images.pexels.com/photos/1456706/pexels-photo-1456706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="shoe image"> </div>
+                <div class="item-name">product name</div>
+                <div class="price">$99</div>
+                <div class="add-cart">
+                <div class="card-btn"><button class="btn">Add to Cart</button></div>
                 </div>
             </div>
-            <div id="items">
-                 <div id="image"><img src="https://images.pexels.com/photos/1449844/pexels-photo-1449844.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="shoe image"> </div>
-                <div id="item-name">product name</div>
-                <div id="price">$280</div>
-                <div id="add-cart">
-                <div id="card-btn"><button id="btn">Add to Cart</button></div>
+            <div class="items">
+                 <div class="image"><img src="https://images.pexels.com/photos/1449844/pexels-photo-1449844.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="shoe image"> </div>
+                <div class="item-name">product name</div>
+                <div class="price">$280</div>
+                <div class="add-cart">
+                <div class="card-btn"><button class="btn">Add to Cart</button></div>
                 </div>
             </div>
-            <div id="items">
-                 <div id="image"><img src="https://images.pexels.com/photos/292998/pexels-photo-292998.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="shoe image"> </div>
-                <div id="item-name">product name</div>
-                <div id="price">$250</div>
-                <div id="add-cart">
-                <div id="card-btn"><button id="btn">Add to Cart</button></div>
+            <div class="items">
+                 <div class="image"><img src="https://images.pexels.com/photos/292998/pexels-photo-292998.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="shoe image"> </div>
+                <div class="item-name">product name</div>
+                <div class="price">$250</div>
+                <div class="add-cart">
+                <div class="card-btn"><button class="btn">Add to Cart</button></div>
                 </div>
             </div>
-            <div id="items">
-                 <div id="image"><img src="https://images.pexels.com/photos/1598508/pexels-photo-1598508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="shoe image"> </div>
-                <div id="item-name">product name</div>
-                <div id="price">$100</div>
-                <div id="add-cart">
-                <div id="card-btn"><button id="btn">Add to Cart</button></div>
+            <div class="items">
+                 <div class="image"><img src="https://images.pexels.com/photos/1598508/pexels-photo-1598508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="shoe image"> </div>
+                <div class="item-name">product name</div>
+                <div class="price">$100</div>
+                <div class="add-cart">
+                <div class="card-btn"><button class="btn">Add to Cart</button></div>
                 </div>
             </div>
-            <div id="items">
-                 <div id="image"><img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="shoe image"> </div>
-                <div id="item-name">product name</div>
-                <div id="price">$150</div>
-                <div id="add-cart">
-                <div id="card-btn"><button id="btn">Add to Cart</button></div>
+            <div class="items">
+                 <div class="image"><img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="shoe image"> </div>
+                <div class="item-name">product name</div>
+                <div class="price">$150</div>
+                <div class="add-cart">
+                <div class="card-btn"><button class="btn">Add to Cart</button></div>
                 </div>
             </div>
-            <div id="items">
-                 <div id="image"><img src="https://images.pexels.com/photos/10195370/pexels-photo-10195370.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="shoe image"> </div>
-                <div id="item-name">product name</div>
-                <div id="price">$500</div>
-                <div id="add-cart">
-                <div id="card-btn"><button id="btn">Add to Cart</button></div>
+            <div class="items">
+                 <div class="image"><img src="https://images.pexels.com/photos/10195370/pexels-photo-10195370.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="shoe image"> </div>
+                <div class="item-name">product name</div>
+                <div class="price">$500</div>
+                <div class="add-cart">
+                <div class="card-btn"><button class="btn">Add to Cart</button></div>
                 </div>
             </div>
         </div>
@@ -115,5 +142,7 @@
         <!-- <h3>© 2024 MeCommerce. All rights reserved.</h3> -->
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
