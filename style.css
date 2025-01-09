@@ -17,6 +17,10 @@ body {
   background-color: rgb(238, 238, 214);
 }
 #navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   font-family: "Mulish", serif;
   background-color: #8ca3d8;
   color: #fff;
@@ -36,6 +40,12 @@ body {
   width: 85%;
   background-color: #ffff;
   border-radius: 10px;
+}
+#text {
+  font-family: "Mulish", serif;
+  padding: 40px;
+  margin-left: 15px;
+  font-size: 30px;
 }
 .material-symbols-outlined {
   font-size: 50px;
@@ -67,4 +77,87 @@ body {
   /* border: 2px solid #fff; */
   padding: 20px;
   font-size: 25px;
+}
+#products {
+  /* border: 2px solid #000; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  height: 410px;
+  width: 1200px;
+  margin-left: 30px;
+  padding: 16px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+#products::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+
+#items {
+  height: 300px;
+  margin-left: 30px;
+  margin-top: 10px;
+  flex: 1 1 calc(30% - 12%);
+  box-sizing: border-box;
+  padding: 20px;
+  background: linear-gradient(to right, #bcbfc6, #eeeee6);
+  border-radius: 10px;
+  border: none;
+}
+
+#image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#image img {
+  height: 190px;
+  width: 180px;
+  margin-bottom: 10px;
+  transition: 0.3s ease-out;
+  border-radius: 5px;
+}
+#image img:hover {
+  transform: scale(1.1);
+}
+
+#item-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Mulish", serif;
+  font-weight: 600;
+  color: #000;
+}
+#price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Mulish", serif;
+  font-weight: 600;
+}
+#add-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#btn {
+  margin-top: 5px;
+  font-family: "Mulish", serif;
+  font-weight: 600;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #8ca3d8;
+  font-family: "Mulish", serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+#btn:hover {
+  background-color: #456bc5;
+  color: #fff;
 }
